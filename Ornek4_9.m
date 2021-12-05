@@ -1,0 +1,10 @@
+Fs=10000;
+Fd=1000;
+b=[0 1 0 1 0 0 1 1 1 0];
+aminrz=amikodla(b,Fd,Fs,'ami-nrz');
+plot(aminrz,'g');
+title('Manchester (AMI-NRZ)');
+pause;
+amirz=amikodla(b,Fd,Fs,'ami-rz');
+plot(amirz,'g');
+title('Miller (AMI-RZ)');

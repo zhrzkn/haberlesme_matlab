@@ -1,0 +1,10 @@
+Fs=10000;
+Fd=1000;
+b=[1 0 1 0 1 1 1 0 0 1];
+bnrz=tekkutuplu(b,Fd,Fs,'nrz');
+plot(bnrz,'b');
+title('Tek Kutuplu NRZ');
+pause;
+brz=tekkutuplu(b,Fd,Fs,'rz');
+plot(brz,'b');
+title('Tek Kutuplu RZ');

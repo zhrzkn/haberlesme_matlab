@@ -1,0 +1,10 @@
+Fs=10000;
+Fd=1000;
+b=[1 0 0 1 1 0 1 1 1 0];
+manch=fazkodla(b,Fd,Fs,'manchester');
+plot(manch,'k');
+title('Manchester');
+pause;
+mil=fazkodla(b,Fd,Fs,'miller');
+plot(mil,'k');
+title('Miller');

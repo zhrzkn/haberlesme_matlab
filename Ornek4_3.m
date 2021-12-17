@@ -1,0 +1,13 @@
+Fs=1000;
+Fd=100;
+NFFT=1;
+b=round(rand(1,1000));
+bnrz=tekkutuplu(b,Fd,Fs,'nrz');
+[gsybnrz,f]=pwelch(bnrz,[],NFFT,Fs);
+plot(f,gsybnrz,'k');
+title('tek-kutuplu NRZ Güç Spektral Yoğunluğu');
+pause;
+brz=tekkutuplu(b,Fd,Fs,'rz');
+[gsybrz,f]=pwelch(brz,[],NFFT,Fs);
+plot(f,gsybrz,'k');
+title('tek-kutuplu RZ NGüç Spektral Yoğunluğu');
